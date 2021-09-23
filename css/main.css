@@ -197,7 +197,7 @@
   justify-content: center;
   left: 0;
   right: 0;
-  bottom: 40px; }
+  bottom: -180px; }
   .slick-dots li {
     transform: translateX(-50%); }
     .slick-dots li:not(:last-child) {
