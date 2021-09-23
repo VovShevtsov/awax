@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" sizes="16x16">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>test_top7</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <div class="site-container">
+
+    <header class="header">
+      <div class="container">
+        <nav class="menu header__menu">
+          <a href="#" class="logo header__logo">
+            <img class="logo__img" src="img/Logo.png" alt="logo">
+          </a>
+
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link menu__link--active" href="#">home</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">about us</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">services</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">our projects</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">our team</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">happy clients</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">price</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">some facts</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">contact us</a>
+            </li>
+          </ul>
+
+          <button class="burger header__burger">
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line"></span>
+          </button>
+        </nav>
+
+
+      </div>
+    </header>
+
+    <main class="main">
+
+      <section class="hiro" style="background-image: url(img/slider-bg.jpg);">
+        <h1 class="sr-only">Awax disign studio</h1>
+
+        <ul class="hiro__slider">
+          <li class="hiro__slider-item">
+            <div class="hiro__title">
+              Design is about
+              <span>communication</span>
+            </div>
+            <span class="hiro__subtitle">
+              call us: +00 0 1234 5678
+            </span>
+            <a class="main-btn hiro__btn" href="#">get in touch!</a>
+          </li>
+
+          <li class="hiro__slider-item">
+            <div class="hiro__title">Design is about
+              <span>communication</span>
+            </div>
+            <span class="hiro__subtitle">
+              call us: +00 0 1234 5678
+            </span>
+            <a class="main-btn hiro__btn" href="#">get in touch!</a>
+          </li>
+
+          <li class="hiro__slider-item">
+            <div class="hiro__title">Design is about
+              <span>communication</span></div>
+            <span class="hiro__subtitle">
+              call us: +00 0 1234 5678
+            </span>
+            <a class="main-btn hiro__btn" href="#">get in touch!</a>
+          </li>
+        </ul>
+
+        <a class="link-btn hiro__link" href="#" aria-label="call me" id="mybtn"></a>
+
+        <div class="popup hiro__popup" id="mypopup">
+          <div class="popup__window">
+            <span class="popup__close">&times</span>
+            <form class="popup__form" action="#">
+              <div class="popup__form-inner">
+                <label class="popup__form-label" for="formName">
+                  <input class="popup__form-input" type="text" name="name" id="formName" placeholder="Name"
+                    data-validate-filed="name">
+                </label>
+
+                <label class="popup__form-label" for="formPhone">
+                  <input class="popup__form-input" type="tel" name="phone" id="formPhone" placeholder="Phone"
+                    data-validate-filed="tel">
+                </label>
+              </div>
+              <button class="btn-reset main-btn popup__form-btn" type="submit">call me</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="about">
+        <div class="container">
+          <h2 class="title about__title">about us</h2>
+          <span class="subtitle about__subtitle">who we are?</span>
+
+          <div class="about__content">
+            <div class="about__left">
+              <div class="about__text">
+                <p>
+                  Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at
+                  facilisis est, vel condimentum ligula. Mauris volutpat vitae risus sed pellentesque. Praesent
+                  fermentum neque ac tellus gravida, at varius sem accumsan. Nam porta erat id sapien consectetur. Fusce
+                  sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilisis purus. Nam porta erat
+                  id sapien consectetur. Fusce sed purus eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo
+                  facilisis purus.
+                </p>
+              </div>
+              <a class="main-btn about__btn" href="#">learn more</a>
+            </div>
+
+            <div class="about__video">
+              <a class="about__link" href="#" aria-label="whatch video">
+                <img class="about__img" src="img/video.jpg" alt="video">
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="price">
+        <div class="container">
+          <h2 class="title price__title">price</h2>
+          <span class="subtitle price__subtitle">pricing table</span>
+
+          <ul class="price__list">
+            <li class="price__item">
+              <article class="price-card">
+                <h3 class="price-card__title">express</h3>
+                <span class="price-card__num">$9.99</span>
+                <span class="price-card__term">/ month</span>
+                <ul class="price-card__list">
+                  <li class="price-card__item">Tracking issues</li>
+                  <li class="price-card__item">Add bugs through email</li>
+                  <li class="price-card__item">Notifications</li>
+                  <li class="price-card__item">Time tracking</li>
+                  <li class="price-card__item">Custom views</li>
+                </ul>
+                <a class="main-btn price-card__btn" href="#">choose</a>
+                <a class="price-card__link" href="#" aria-label="price card"></a>
+              </article>
+            </li>
+
+            <li class="price__item">
+              <article class="price-card">
+                <h3 class="price-card__title">standart</h3>
+                <span class="price-card__num">$14.99</span>
+                <span class="price-card__term">/ month</span>
+                <ul class="price-card__list">
+                  <li class="price-card__item">Tracking issues</li>
+                  <li class="price-card__item">Add bugs through email</li>
+                  <li class="price-card__item">Notifications</li>
+                  <li class="price-card__item">Time tracking</li>
+                  <li class="price-card__item">Custom views</li>
+                </ul>
+                <a class="main-btn price-card__btn" href="#">choose</a>
+                <a class="price-card__link" href="#" aria-label="price card"></a>
+              </article>
+            </li>
+
+            <li class="price__item">
+              <article class="price-card">
+                <h3 class="price-card__title">luxe</h3>
+                <span class="price-card__num">$19.99</span>
+                <span class="price-card__term">/ month</span>
+                <ul class="price-card__list">
+                  <li class="price-card__item">Tracking issues</li>
+                  <li class="price-card__item">Add bugs through email</li>
+                  <li class="price-card__item">Notifications</li>
+                  <li class="price-card__item">Time tracking</li>
+                  <li class="price-card__item">Custom views</li>
+                </ul>
+                <a class="main-btn price-card__btn" href="#">choose</a>
+                <a class="price-card__link" href="#" aria-label="price card"></a>
+              </article>
+            </li>
+
+            <li class="price__item">
+              <article class="price-card">
+                <h3 class="price-card__title">premium</h3>
+                <span class="price-card__num">$24.99</span>
+                <span class="price-card__term">/ month</span>
+                <ul class="price-card__list">
+                  <li class="price-card__item">Tracking issues</li>
+                  <li class="price-card__item">Add bugs through email</li>
+                  <li class="price-card__item">Notifications</li>
+                  <li class="price-card__item">Time tracking</li>
+                  <li class="price-card__item">Custom views</li>
+                </ul>
+                <a class="main-btn price-card__btn" href="#">choose</a>
+                <a class="price-card__link" href="#" aria-label="price card"></a>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="container">
+          <h2 class="title contacts__title">
+            contact us
+          </h2>
+          <span class="subtitle contacts__subtitle">
+            our agency located in Melbourne, Australia
+          </span>
+          <form class="form-message contacts__form" action="#">
+            <div class="form-message__top">
+              <label class="form-message__lable form-message__lable">
+                <input class="form-message__input form-message__input" type="text" name="name" placeholder="name">
+              </label>
+              <label class="form-message__lable">
+                <input class="form-message__input" type="email" name="E-mail" placeholder="email">
+              </label>
+            </div>
+
+            <label class="form-message__lable">
+              <input class="form-message__input" type="text" name="subject" placeholder="subject">
+            </label>
+            <textarea name="message" placeholder="message" class="form-message__textarea"></textarea>
+            <button class=" main-btn btn-reset form-message__btn" type="submit">
+              send message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__left">
+            <ul class="social footer__social">
+              <li class="social__item"><a class="social__link" href="#">
+                  <img class="social__img" src="img/twitter.png" alt="twtter">
+                </a></li>
+              <li class="social__item"><a class="social__link" href="#">
+                  <img class="social__img" src="img/Instagram.png" alt="Instagram">
+                </a></li>
+              <li class="social__item"><a class="social__link" href="#">
+                  <img class="social__img" src="img/linkedIn.png" alt="linked In">
+                </a></li>
+              <li class="social__item"><a class="social__link" href="#">
+                  <img class="social__img" src="img/facebook.png" alt="facebook">
+                </a></li>
+              <li class="social__item"><a class="social__link" href="#">
+                  <img class="social__img" src="img/youtube.png" alt="you tube">
+                </a></li>
+              <li class="social__item"><a class="social__link" href="#">
+                  <img class="social__img" src="img/googleplus.png" alt="google plus">
+                </a></li>
+              <li class="social__item"><a class="social__link" href="#">
+                  <img class="social__img" src="img/Other.png" alt="other">
+                </a></li>
+            </ul>
+
+            <span class="footer__bu">awax © 2016</span>
+          </div>
+
+          <div class="footer__text">
+            <p>
+              Nulla iaculis enim a magna tempor congue. Sed aliquam dignissim hendrerit. Duis erat nulla, pellentesque
+              at enim in, scelerisque placerat nunc. Nulla vestibulum ex sed neque auctor rutrum. Donec fringilla
+              tincidunt aliquet. Nullam rhoncus urna massa, vulputate congue velit pulvinar suscipit. Mauris laoreet
+              blandit pharetra. Suspendisse rutrum dolor at augue convallis, eget dapibus nunc consequat. Sed diam
+              nulla, elementum non laoreet eu,vulputate urna, at pellentesque risus orci in ante.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <a class="link-btn footer__link" href="#" onclick="return up()" aria-label="scrollup"></a>
+    </footer>
+
+  </div>
+  <script src="js/vendor.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

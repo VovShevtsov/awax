@@ -1,0 +1,220 @@
+.custom-checkbox__field:checked + .custom-checkbox__content::after {
+  opacity: 1; }
+
+.custom-checkbox__field:focus + .custom-checkbox__content::before {
+  outline: 2px solid #f00;
+  outline-offset: 2px; }
+
+.custom-checkbox__field:disabled + .custom-checkbox__content {
+  opacity: 0.4;
+  pointer-events: none; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.woff") format("woff");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal; }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Light.woff") format("woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #242424;
+  background-color: #fff;
+  width: 100%; }
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+img {
+  max-width: 100%;
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul,
+ol {
+  padding: 0; }
+
+ul {
+  list-style: none; }
+
+button {
+  cursor: pointer;
+  outline: transparent; }
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.main-btn {
+  display: inline-block;
+  padding: 0px 10px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 25px;
+  background-color: #b88b58;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  outline: transparent; }
+  @media (min-width: 991px) {
+    .main-btn:hover {
+      background-color: #373737; } }
+  .main-btn:focus {
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.75); }
+  .main-btn:active {
+    transform: translateY(3px); }
+
+.link-btn {
+  width: 65px;
+  height: 65px;
+  background-color: #b88b58;
+  border-radius: 50%;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 1, 0.24);
+  position: absolute;
+  outline: transparent; }
+  @media (min-width: 991px) {
+    .link-btn:hover {
+      background-color: #373737; } }
+  .link-btn:focus {
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.75); }
+  .link-btn:active {
+    transform: translateY(3px); }
+
+.title {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 30px;
+  color: #000;
+  text-transform: uppercase; }
+
+.subtitle {
+  display: block;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  color: #aeaeae;
+  text-transform: uppercase; }
+
+.is-outer {
+  position: relative !important;
+  left: -9999px !important; }
+
+.site-container {
+  overflow: hidden; }
+
+.is-hidden {
+  display: none !important; }
+
+.for-mobile {
+  display: none; }
+  @media (max-width: 767px) {
+    .for-mobile {
+      display: block; } }
+
+.error {
+  border: 2px #ff4019 solid !important; }
+
+.btn-reset {
+  border: none;
+  background: transparent;
+  cursor: pointer; }
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  max-width: 1130px; }
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none; }
+
+/*# sourceMappingURL=global.css.map */
